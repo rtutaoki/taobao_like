@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="framlayout_background">#AAAAAA</color>
+    <color name="red">#FFFF0000</color>
+    <color name="black">#000000</color>
+    <color name="black1">#111111</color>
+    <color name="black2">#222222</color>
+    <color name="black3">#333333</color>
+    <color name="black4">#444444</color>
+    <color name="black5">#555555</color>
+    <color name="black6">#666666</color>
+    <color name="black7">#777777</color>
+    <color name="black8">#888888</color>
+    <color name="black9">#999999</color>
+    <color name="blackA">#AAAAAA</color>
+    <color name="blackB">#BBBBBB</color>
+    <color name="blackC">#CCCCCC</color>
+    <color name="blackD">#DDDDDD</color>
+    <color name="blackE">#EEEEEE</color>
+    <color name="blackF">#FFFFFF</color>
+    <color name="orange">#FF8C00</color>
+    <color name="light_blue">#87CEEB</color>
+
+</resources>

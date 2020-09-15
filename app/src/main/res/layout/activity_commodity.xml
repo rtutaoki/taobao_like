@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommodityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_com_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blackD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_com_search_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_direction_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ed_com_search_bar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="请输入想搜索的商品"
+            app:layout_constraintEnd_toStartOf="@+id/bt_com_search"
+            app:layout_constraintStart_toEndOf="@+id/iv_com_search_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_com_search"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:text="搜索"
+            android:textColor="@color/blackF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_com_search">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_com"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:scaleType="center"
+                android:src="@drawable/com_example"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_com_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_com"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_com_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="商品名"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_com_stock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_com_price" />
+
+            <TextView
+                android:id="@+id/tv_com_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="简介"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_com_stock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_com_name" />
+
+            <TextView
+                android:id="@+id/tv_com_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_com"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_com_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库存"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_com_username" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackD">
+
+    <ImageView
+        android:id="@+id/gouwuche_iv1"
+        android:src="@drawable/qbbb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/gouwuche_textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"></ImageView>
+    <TextView
+        android:id="@+id/gouwuche_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="购物车快饿扁了T.T"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:id="@+id/gouwuche_textview2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/gouwuche_textview1"
+        android:text="主人快给我挑点宝贝吧"
+        android:textSize="20dp"
+        android:textColor="@color/black9"
+        android:gravity="center"></TextView>
+    <Button
+        android:id="@+id/gouwuche_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gouwuche_textview2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@color/blackF"
+        android:text="去逛逛"
+        android:visibility="visible"></Button>
+</RelativeLayout>
